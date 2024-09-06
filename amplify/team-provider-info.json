@@ -1,0 +1,33 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-warrantyvendorpanel-staging-e3b26-authRole",
+      "UnauthRoleArn": "arn:aws:iam::674911493756:role/amplify-warrantyvendorpanel-staging-e3b26-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::674911493756:role/amplify-warrantyvendorpanel-staging-e3b26-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-warrantyvendorpanel-staging-e3b26-deployment",
+      "UnauthRoleName": "amplify-warrantyvendorpanel-staging-e3b26-unauthRole",
+      "StackName": "amplify-warrantyvendorpanel-staging-e3b26",
+      "StackId": "arn:aws:cloudformation:ap-south-1:674911493756:stack/amplify-warrantyvendorpanel-staging-e3b26/0bf56d50-676b-11ef-9721-068b619c0853",
+      "AmplifyAppId": "d1g14n7io5t9oq",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-warrantyvendorpanel-staging-e3b26-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "warrantyvendorpaneldf79e130df79e130": {}
+      },
+      "function": {
+        "warrantyvendorpaneld33d9e64": {
+          "deploymentBucketName": "amplify-warrantyvendorpanel-staging-e3b26-deployment",
+          "s3Key": "amplify-builds/warrantyvendorpaneld33d9e64-43586a304e496f2b6539-build.zip"
+        }
+      },
+      "api": {
+        "api80bd7f63": {}
+      },
+      "storage": {
+        "s3ce40869d": {}
+      }
+    }
+  }
+}

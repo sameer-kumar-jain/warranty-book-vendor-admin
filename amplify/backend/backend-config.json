@@ -1,0 +1,79 @@
+{
+  "api": {
+    "api80bd7f63": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "warrantyvendorpaneld33d9e64"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "warrantyvendorpaneldf79e130df79e130": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "ON",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "NAME",
+          "PHONE_NUMBER"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "PHONE_NUMBER"
+        ],
+        "verificationMechanisms": [
+          "PHONE_NUMBER"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "warrantyvendorpaneld33d9e64": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_warrantyvendorpaneld33d9e64_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "warrantyvendorpaneld33d9e64"
+        }
+      ]
+    },
+    "AMPLIFY_function_warrantyvendorpaneld33d9e64_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "warrantyvendorpaneld33d9e64"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "s3ce40869d": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
+  }
+}

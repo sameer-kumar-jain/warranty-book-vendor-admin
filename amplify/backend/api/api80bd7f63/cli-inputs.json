@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "paths": {
+    "/categories": {
+      "name": "/categories",
+      "lambdaFunction": "warrantyvendorpaneld33d9e64",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read"
+        ]
+      }
+    },
+    "/invoices": {
+      "name": "/invoices",
+      "lambdaFunction": "warrantyvendorpaneld33d9e64",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/customers": {
+      "name": "/customers",
+      "lambdaFunction": "warrantyvendorpaneld33d9e64",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read"
+        ]
+      }
+    }
+  }
+}
