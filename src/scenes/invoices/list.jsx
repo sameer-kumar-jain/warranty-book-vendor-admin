@@ -1,4 +1,4 @@
-import { Box, Button,  useTheme } from "@mui/material";
+import { Box, Button, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 import Header from "../../components/Header";
@@ -16,7 +16,7 @@ const InvoicesList = () => {
    */
   const loadInvoices = async () => {
     let data = await get("/invoices");
-    setInvoice(data.map(entry => ({ ...entry, ...entry.customer })))
+    setInvoice(data.map(entry => ({ ...entry.customer, ...entry, })))
   }
   const columns = [
     {
@@ -41,7 +41,7 @@ const InvoicesList = () => {
       flex: 1,
     },
   ];
-
+  console.log(invoices)
   return (
     <Box m="20px">
       <Box display="flex" justifyContent="space-between">
